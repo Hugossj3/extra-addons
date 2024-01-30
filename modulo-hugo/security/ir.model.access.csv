@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_modulo-hugo_modulo-hugo,modulo-hugo.modulo-hugo,model_modulo-hugo_modulo-hugo,base.group_user,1,1,1,1
