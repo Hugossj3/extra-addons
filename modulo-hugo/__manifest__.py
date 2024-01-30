@@ -1,22 +1,21 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "modulo-Hugo",
+    'name': "Modulo-hugo",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modulo creadito con el Scaffolding, sincronizado con github""",
 
     'description': """
-        Long description of module's purpose
+        Este Modulo esta para experimentar como ratas de laboratorio
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Hugo(The Goat)",
+    'website': "https://github.com/Hugossj3/extra-addons",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'tools',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -32,4 +31,6 @@
     'demo': [
         'demo/demo.xml',
     ],
+    "application":True,
+    "installable":True
 }
