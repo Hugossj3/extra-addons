@@ -12,4 +12,4 @@ class videoclub_pelis(models.Model):
         ('may18','Mayores 18')
     ], string='clasificacion', default='TP')
     presupuesto=fields.Integer()
-    fechaestreno=fields.Date
+    fechaestreno=fields.Date()
