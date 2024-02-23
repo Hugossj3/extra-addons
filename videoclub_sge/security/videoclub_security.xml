@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="videoclub_jefe" models="res.groups">
+    <record id="videoclub_jefe" model="res.groups">
         <field name="name">videoclub / Jefe</field>
     </record>
 

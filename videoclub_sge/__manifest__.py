@@ -3,8 +3,7 @@
     'name': "Videoclub_sge",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Esto es un intento de tener un modulo propio""",
 
     'description': """
         Long description of module's purpose
@@ -25,7 +24,7 @@
 
     # always loaded
     'data': [
-        'security/videoclub_security.xml'
+        'security/videoclub_security.xml',
         'security/ir.model.access.csv',
         'views/videoclub.xml',
     ],

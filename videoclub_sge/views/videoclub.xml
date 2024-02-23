@@ -2,8 +2,8 @@
     <data>
 
         <record model="ir.ui.view" id="videoclub_sge.pelis_arbol">
-            <field "name">videoclub_sge.pelis_arbol</field>
-            <field "model">videoclub.pelis</field>
+            <field name="name">videoclub_sge.pelis_arbol</field>
+            <field name="model">videoclub.pelis</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="titulo"/>
