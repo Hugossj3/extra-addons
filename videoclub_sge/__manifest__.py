@@ -11,23 +11,23 @@
     """,
 
     'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'website': "https://github.com/Hugossj3/extra-addons",
+    'license':"AGPL-3",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'Tools',
+    'version': '16.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
     # always loaded
-    # Muchos Cambios
     'data': [
-        #'security/ir.model.access.csv',
+        'security/videoclub_security.xml'
+        'security/ir.model.access.csv',
         'views/videoclub.xml',
-        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
