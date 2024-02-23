@@ -23,9 +23,10 @@
     'depends': ['base'],
 
     # always loaded
+    # Muchos Cambios
     'data': [
         #'security/ir.model.access.csv',
-        'views/views.xml',
+        'views/videoclub.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
