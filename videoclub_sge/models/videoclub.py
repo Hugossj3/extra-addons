@@ -13,3 +13,13 @@ class videoclub_pelis(models.Model):
     ], string='clasificacion', default='TP')
     presupuesto=fields.Integer()
     fechaestreno=fields.Date()
+    subvencionado=fields.Integer(compute='_valor_subvencion')
+    invertido=fields.Integer(compute='_valor_inversion')
+
+    def _valor_subvencion(self):
+            self.subvencionado=self.presupuesto*0.3
+
+    @api.depends('presupuesto')
+    def _valor_inversion(self):
+          self.invertido=self.presupuesto*0.7    
+
