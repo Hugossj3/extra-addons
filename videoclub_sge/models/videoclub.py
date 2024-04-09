@@ -13,17 +13,16 @@ class videoclub_pelis(models.Model):
     ], string='clasificacion', default='TP')
     presupuesto=fields.Integer()
     fechaestreno=fields.Date()
-    subvencionado=fields.Integer(compute='_valor_subvencion',store=True)
-    invertido=fields.Integer(compute='_valor_inversion',store=True)
+    subvencionado=fields.Integer(compute='_valor_subvencion')
+    invertido=fields.Integer(compute='_valor_inversion')
 
-@api.depends('presupuesto')
-def _valor_subvencion(self):
-    for record in self:
-        record.subvencionado = record.presupuesto * 0.3
+    @api.depends('presupuesto')
+    def _compute_subvencionado(self):
+        for record in self:
+            record.subvencionado = record.presupuesto * 0.3
 
-@api.depends('presupuesto')
-def _valor_inversion(self):
-    for record in self:
-        record.invertido = record.presupuesto * 0.7
-
+    @api.depends('presupuesto')
+    def _compute_invertido(self):
+        for record in self:
+            record.invertido = record.presupuesto * 0.7  
 
