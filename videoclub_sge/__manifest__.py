@@ -6,7 +6,7 @@
         Esto es un intento de tener un modulo propio""",
 
     'description': """
-        A veces hago cambios aqui cuando el github no me detecta los campos
+        A veces hago cambios aqui cuando el github no me detecta los campos, patatas al carbon
     """,
 
     'author': "My Company",
