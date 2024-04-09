@@ -16,14 +16,14 @@ class videoclub_pelis(models.Model):
     subvencionado=fields.Integer(compute='_valor_subvencion')
     invertido=fields.Integer(compute='_valor_inversion')
 
-    @api.depends('presupuesto')
-    def _valor_subvencion(self):
-        for record in self:
-            record.subvencionado = record.presupuesto * 0.3
+@api.depends('presupuesto')
+def _valor_subvencion(self):
+    for record in self:
+        record.subvencionado = record.presupuesto * 0.3
 
-    @api.depends('presupuesto')
-    def _valor_inversion(self):
-        for record in self:
-            record.invertido = record.presupuesto * 0.7
+@api.depends('presupuesto')
+def _valor_inversion(self):
+    for record in self:
+        record.invertido = record.presupuesto * 0.7
 
 
