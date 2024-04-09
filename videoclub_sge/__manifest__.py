@@ -6,7 +6,7 @@
         Esto es un intento de tener un modulo propio""",
 
     'description': """
-        Long description of module's purpose
+        A veces hago cambios aqui cuando el github no me detecta los campos
     """,
 
     'author': "My Company",
