@@ -28,7 +28,8 @@
                         <field name="presupuesto"/>
                         <field name="fechaestreno"/>
                         <field name="subvencionado"/>
-                        <field name="invertido"/> 
+                        <field name="invertido"/>
+                        <field name="millonario"/> 
                     </group>
                 </form>
             </field>

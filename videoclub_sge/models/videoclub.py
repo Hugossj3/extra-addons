@@ -15,6 +15,7 @@ class videoclub_pelis(models.Model):
     fechaestreno=fields.Date()
     subvencionado=fields.Integer(compute='_valor_subvencion')
     invertido=fields.Integer(compute='_valor_inversion')
+    millonario=fields.Boolean(compute='_valor_millonario')
 
     @api.depends('presupuesto')
     def _compute_subvencionado(self):
@@ -24,5 +25,10 @@ class videoclub_pelis(models.Model):
     @api.depends('presupuesto')
     def _compute_invertido(self):
         for record in self:
-            record.invertido = record.presupuesto * 0.7  
+            record.invertido = record.presupuesto * 0.7 
+
+    @api.depends('presupuesto')
+    def _compute_millonario(self):
+        for record in self:
+            record.millonario = record.presupuesto>1000000  
 
