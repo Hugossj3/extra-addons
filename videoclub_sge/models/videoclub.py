@@ -4,6 +4,7 @@ class compania_cinematografica(models.Model):
 #_name = 'res.partner' --no hace falta
     _inherit = 'res.partner'
     premiada = fields.Boolean(default='false')
+
 class videoclub_pelis(models.Model):
     _name='videoclub.pelis'
     _description='Peliculas'
