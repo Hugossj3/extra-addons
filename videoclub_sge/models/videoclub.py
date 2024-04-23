@@ -25,18 +25,18 @@ class videoclub_pelis(models.Model):
     compania = fields.Many2one('res.partner')
 
 
-    @api.depends('presupuesto')
-    def _compute_subvencionado(self):
+    
+    def _valor_subvencion(self):
         for record in self:
             record.subvencionado = record.presupuesto * 0.3
 
     @api.depends('presupuesto')
-    def _compute_invertido(self):
+    def _valor_inversion(self):
         for record in self:
             record.invertido = record.presupuesto * 0.7 
 
     @api.depends('presupuesto')
-    def _compute_millonario(self):
+    def _valor_millonario(self):
         for record in self:
             record.millonario = record.presupuesto>1000000  
 
