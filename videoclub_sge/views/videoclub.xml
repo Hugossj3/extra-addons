@@ -46,12 +46,25 @@
             </field>
         </record>
 
+        <record model="ir.actions.act_window" id="videoclub_sge.companias_ventana" >
+            <field name="name">Compañías</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,form</field>
+        </record>   
+
         <!--menus-->
         <menuitem name="VIDEOCLUB" id="videoclub_sge.menu_root"/>
 
+        
         <menuitem name="Gestion Pelis" id="videoclub_sge.gestion_pelis"
         parent="videoclub_sge.menu_root"/>
         <menuitem name="Pelis" id="videoclub_sge.menu_pelis"
         parent="videoclub_sge.gestion_pelis" action="videoclub_sge.pelis_ventana"/>
+
+        
+        <menuitem name="Gestión compañías" id="videoclub_sge.gestion_companias"
+        parent="videoclub_sge.menu_root" />
+        <menuitem name="Compañías" id="videoclub_sge.menu_companias"
+        parent="videoclub_sge.gestion_companias" action="videoclub_sge.companias_ventana" />
     </data>
 </odoo>
