@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Modulo-hugo",
+    'name': "Ropa_sge",
 
     'summary': """
         Modulo creadito con el Scaffolding, sincronizado con github""",
 
     'description': """
-        Este Modulo esta para experimentar como ratas de laboratorio
+        Este Modulo esta hecho para hacer un modulo de ropa
     """,
 
     'author': "Hugo(The Goat)",
